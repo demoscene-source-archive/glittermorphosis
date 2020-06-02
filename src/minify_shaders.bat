@@ -1,0 +1,1 @@
+shader_minifier.exe --preserve-externals -o shader_code.h vertex.glsl fragment.glsl

@@ -1,0 +1,25 @@
+
+* compress the code shared by the star and heart, maybe the other shapes
+* put all this stuff into a codeblocks project for faster design iteration and performance measurements
+* fix the shader minifier or figure out another way to comply with the spec for seperable program interfaces
+
+like a rollercoaster
+
+
+
+* maybe push the star further away
+* add something to push home the idea that the fountain is on a surface (some adjustment to shading of the particles which are below the floor, to make the appearance of a tiled floor)
+
+
+-- done --
+* add a subtle camera wobble / sway (like hand-held) to the fountain part
+* make the fountain part focus-in
+* make the remaining stars at the end behind the heart slow down to a stop. must be fully stopped by the time they dominate the view.
+* create the ringed planet
+* create the galaxy
+* make the post-processes run faster
+* add the current frame index to the RNG seed
+* make the front bokeh centerpoint glow more pronounced
+* fix the star shape so it doesn't have a super-bright center
+* fix discontinuities in particle motion resulting in big streaks of motion
+

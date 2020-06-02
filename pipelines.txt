@@ -1,0 +1,28 @@
+
+// Glittermorphosis
+// fountain (start with nothing, then spurts+fountain create all particles for whole demo) -> galaxy (transition from fountain to galaxy is a bit like the spinning particles bit in Second Reality) -> world / earth -> squid -> heart -> disintegration (swept away)
+
+GenProgramPipelines(1, &pipeline)
+v=CreateShaderProgramv(VERTEX, 1, &source)
+f=CreateShaderProgramv(FRAGMENT, 1, &source)
+UseProgramStages(pipeline, VERTEX, v)
+UseProgramStages(pipeline, FRAGMENT, f)
+BindProgramPipeline(pipeline)
+
+GenProgramPipelines CreateShaderProgramv UseProgramStages BindProgramPipeline
+
+--
+program=CreateProgram()
+v=CreateShader(VERTEX)
+f=CreateShader(FRAGMENT)
+ShaderSource(v, 1, &source)
+ShaderSource(f, 1, &source)
+CompileShader(v)
+CompileShader(f)
+AttachShader(program,v)
+AttachShader(program,f)
+LinkProgram(program)
+UseProgram(program)
+
+CreateProgram CreateShader ShaderSource CompileShader AttachShader LinkProgram UseProgram
+
